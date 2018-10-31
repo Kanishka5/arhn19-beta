@@ -129,6 +129,7 @@ text-shadow: 0 0 30px #000155;
 }
 
 .sponsors h1{
+    font-family: Avenir;
     margin-bottom: 10vh;
     font-size: 5vh;
     color: white;
@@ -144,6 +145,7 @@ text-shadow: 0 0 30px #000155;
     }
 
     .contact h1{
+        font-family: Avenir;
         font-size: 5vh;
         color: white;
     }

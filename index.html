@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="src/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="src/content.css" />
+    <link rel="shortcut icon" href="img/arhnlogosmall.png" type="image/x-icon">
+    <title>Aarohan</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/svgLoader.js"></script>
+    <script type="text/javascript" src="js/jquery.downCount.js"></script>
+    <script type="text/javascript" src="src/fullpage.js"></script>
+ 
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['Home', 'Sponsors', 'ContactUs'],
+                navigation: true,
+                navigationPosition: 'left',
+                navigationTooltips: ['HOME', 'SPONSERS', 'CONTACT US'],
+                showActiveTooltip: true,
+                menu: '#menu',
+            });
+        });
+    </script>
+
+ 
+    <style>
+        .section{
+            font-size: 6em;
+            text-align: center;
+        }
+    </style>
+</head>
+ 
+<body>
+        <!-- Loader -->
+            <div id="loader" class="pageload-overlay" data-opening="M 40 -21.875 C 11.356078 -21.875 -11.875 1.3560784 -11.875 30 C -11.875 58.643922 11.356078 81.875 40 81.875 C 68.643922 81.875 91.875 58.643922 91.875 30 C 91.875 1.3560784 68.643922 -21.875 40 -21.875 Z">
+            <svg class="t" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="xMidYMid slice">
+              <path d="M40,30 c 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 Z"></path>
+            </svg>
+          </div><!-- /pageload-overlay -->
+              
+         <!--Loader End  -->
+        
+        <script>
+          window.onload = loader;
+          function loader() {
+            loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400 } );
+          let page = document.querySelector('.full');
+            let amount = 10;
+            let interval = setInterval(loop, 50);
+            function loop() {
+              if (amount >= 100) {
+                clearInterval(interval);
+                loader.hide();
+                page.style.display="block";
+              }else {
+                amount++;
+                loader.show();
+              }
+            }
+          }
+          </script>
+
+    <div class="full" style="position:absolute;display: none">
+    <div id="fullpage">
+
+        <!-- homepage -->
+        <div class="section">
+
+                <a href="./arhn2018.html">
+                    <div class="title">
+                      
+                      <h1>Aarohan 2019</h1>
+                      <div id="date"> 07    &nbsp;08    &nbsp;09    &nbsp;10</span></div>
+                      <div id="month"> <span>FEBRUARY 2019</span></div>
+                    </div>
+                    </a>
+  
+                  
+                    <!-- countdown -->
+                    <div class="countbox">
+                    <ul class="countdown">
+                        <li>
+                            <span class="days">00</span>
+                            <p class="days_ref">days</p>
+                        </li>
+                        <li class="seperator">.</li>
+                        <li>
+                            <span class="hours">00</span>
+                            <p class="hours_ref">hours</p>
+                        </li>
+                        <li class="seperator">:</li>
+                        <li>
+                            <span class="minutes">00</span>
+                            <p class="minutes_ref">minutes</p>
+                        </li>
+                        <li class="seperator">:</li>
+                        <li>
+                            <span class="seconds">00</span>
+                            <p class="seconds_ref">seconds</p>
+                        </li>
+                    </ul>
+                    <script  type="text/javascript">
+                        $('.countdown').downCount({
+                            date: '02/07/2019 12:00:00',
+                            offset: +10
+                        }, function () {
+                            alert('Aarohan 2k19 is here!!');
+                        });
+                    </script>
+                  
+
+                    </div>
+        </div>
+
+        <!-- spons0rs -->
+        <div class="section">
+            <div class="sponsors">
+                <h1>Our previous sponsors</h1>
+                <img src="img/sponsor2v1.png">
+            </div>
+        </div>
+
+        <!-- Contact us -->
+        <div class="section">
+                <div id="pagewrap" class="contact">  
+                                <div style="text-align:center;color: white;margin-bottom: 20vh;">
+                                    <h1>Contact Us</h1>
+                                </div>  
+                      <div class="contactbox" style="margin-top: 5vh;text-align: center;">
+                              <div class="mycard">
+                                  <div class="card_Banner one">
+                                      <div class="card_Avatar"></div>
+                                      </div>
+                                      <h3>SHIVAM KUMAR JHA</h3>
+                                      <h4>Convener & Head</h4>
+                                      <a> +91-89449-21428</a>
+                                  </div>
+                              <div class="mycard">
+                                  <div class="card_Banner two">
+                                      <div class="card_Avatar"></div>
+                                      </div>
+                                      <h3>MAYANK MEHTA</h3>
+                                      <h4>General Secretary</h4>
+                                      <a> +91-90835-04362</a>
+                                  </div>
+                              <div class="mycard">
+                                  <div class="card_Banner three">
+                                      <div class="card_Avatar"></div>
+                                      </div>
+                                      <h3>AKHIL KOMMINENI</h3>
+                                      <h4>Treasurer</h4>
+                                      <a> +91-94930-56384</a>
+                                  </div>
+                        </div>
+                    
+                    </div>
+        </div>
+    </div>   
+    </div>
+    <script src="js/index.js"></script>         
+</body>
+</html>

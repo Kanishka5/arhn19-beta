@@ -3,6 +3,18 @@
 	src: url(../fonts/AvenirLTStd-Book.otf);
 }
 
+/* navbar */
+.nav a{
+    color: black;
+    font-family: Avenir,sans-serif;
+    padding: 10px;
+}
+
+.nav a:hover{
+    background-color: #121536;
+    color: white;
+}
+
 
 .invert-colors {
     -webkit-filter: invert(1);

@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="src/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="src/content.css" />
     <link rel="shortcut icon" href="img/arhnlogosmall.png" type="image/x-icon">
-    <title>Aarohan</title>
+    <title>Aarohan 2019</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
     <script src="js/classie.js"></script>
@@ -50,6 +50,7 @@
           function loader() {
             loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400 } );
           let page = document.querySelector('.full');
+          let nav = document.querySelector('.nav');
             let amount = 10;
             let interval = setInterval(loop, 50);
             function loop() {
@@ -57,6 +58,7 @@
                 clearInterval(interval);
                 loader.hide();
                 page.style.display="block";
+                nav.style.display="block";
               }else {
                 amount++;
                 loader.show();
@@ -65,11 +67,52 @@
           }
           </script>
 
+          <!-- navbar -->
+                <div id="navBar" class="nav" style="
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    width: 100vw;
+                    /* height: 5vh; */
+                    padding-top: 19px;
+                    background-color: white;
+                    align-items: center;
+                    padding-bottom: 19px;
+                    text-align: center;
+                    float: left;
+                    z-index: 555;
+                ">
+                        <a href="#contact">CONTACT US</a>
+                        <a href="#home">HOME</a>
+                        <a href="#sponsors">SPONSORS</a>
+                    </div>
+
+                <script>
+                    function scrollNav() {
+                    $('.nav a').click(function(){  
+                        //Toggle Class
+                        $(".active").removeClass("active");      
+                        $(this).closest('li').addClass("active");
+                        var theClass = $(this).attr("class");
+                        $('.'+theClass).parent('li').addClass('active');
+                        //Animate
+                        $('html, body').stop().animate({
+                            scrollTop: $( $(this).attr('href') ).offset().top - 160
+                        }, 400);
+                        return false;
+                    });
+                    $('.scrollTop a').scrollTop();
+                    }
+                    scrollNav();
+                </script>
+
+    <!-- fullscreen scroll  -->
+
     <div class="full" style="position:absolute;display: none">
     <div id="fullpage">
 
         <!-- homepage -->
-        <div class="section">
+        <div class="section" id="home">
 
                 <a href="./arhn2018.html">
                     <div class="title">
@@ -118,7 +161,7 @@
         </div>
 
         <!-- spons0rs -->
-        <div class="section">
+        <div class="section" id="sponsors">
             <div class="sponsors">
                 <h1>Our previous sponsors</h1>
                 <img src="img/sponsor2v1.png">
@@ -126,7 +169,7 @@
         </div>
 
         <!-- Contact us -->
-        <div class="section">
+        <div class="section" id="contact">
                 <div id="pagewrap" class="contact">  
                                 <div style="text-align:center;color: white;margin-bottom: 20vh;">
                                     <h1>Contact Us</h1>

@@ -94,6 +94,7 @@ text-decoration: none;
 
 #mascot img{
     height: 27vh;
+    transform: translateX(-130px);
 }
 
 #anim{
@@ -102,6 +103,9 @@ text-decoration: none;
     animation-duration: 3s;
 }
 
+#anim img{
+    transform: translateX(0);
+}
 #date{
 	font-size: 32px;
 	color:white;
@@ -427,7 +431,11 @@ text-shadow: 0 0 30px #000155;
     }
 
     #mascot img{
-        transform: translateX(-45px);
+        transform: translateX(-42vw);
+    }
+
+    #anim img{
+        transform: translateX(-16vw);
     }
 
         /* sponsers */

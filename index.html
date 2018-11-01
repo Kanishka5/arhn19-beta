@@ -52,7 +52,6 @@
           function loader() {
             loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400 } );
           let page = document.querySelector('.full');
-          let nav = document.querySelector('.nav');
             let amount = 10;
             let interval = setInterval(loop, 50);
             function loop() {
@@ -60,7 +59,6 @@
                 clearInterval(interval);
                 loader.hide();
                 page.style.display="block";
-                nav.style.display="block";
               }else {
                 amount++;
                 loader.show();
@@ -76,6 +74,21 @@
 
         <!-- homepage -->
         <div class="section" id="home">
+                <div id="mascot">
+                    <div id="anim">
+                            <img src="img/char@3x.png" alt="mascot"
+                            style="position:absolute;"
+                        >
+                    </div>
+
+                    <img src="img/base@3x.png" alt="base" 
+                        style="
+                                height: 33vh;
+                                position: absolute;
+                                transform: translateX(-130px);
+                                padding-top: 7.5vh;
+                        ">
+                </div>
 
                 <a href="./arhn2018.html">
                     <div class="title">

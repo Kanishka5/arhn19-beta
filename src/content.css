@@ -52,7 +52,7 @@
     text-align: center;
     width: 100%;
     font-size: 40px;
-    transform: translateY(25vh);
+    transform: translateY(11vh);
 }
 ul.countdown {
 color:white;
@@ -86,6 +86,22 @@ text-decoration: none;
 
 /* aarohan */
 
+#mascot{
+    height: 27vh;
+    position: relative;
+    padding-right: 10vw;
+}
+
+#mascot img{
+    height: 27vh;
+}
+
+#anim{
+    animation-name: translate;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
 #date{
 	font-size: 32px;
 	color:white;
@@ -100,12 +116,12 @@ text-decoration: none;
 }
 
 .title {
+padding-top: 6vh;
 z-index: 10;
 left: 50%;
 top: 50%;
 font-family: 'Avenir';
 text-align: center;
-transform: translateY(13vh);
 width: 50%;
 margin-left: 25%;
 }
@@ -134,6 +150,13 @@ line-height: 1;
 color: #EEEEEE;
 letter-spacing: 2px;
 text-shadow: 0 0 30px #000155;
+}
+
+/* mascot anim */
+@keyframes translate {
+    0%   {transform: translateY(0)}
+    50%  {transform: translateY(-20px)}
+    100% {transform: translateY(0)}
 }
 
 
@@ -397,6 +420,14 @@ text-shadow: 0 0 30px #000155;
         transform: translateY(13vh);
         width: 100%;
         margin-left: 0;
+    }
+
+    #mascot{
+        transform: translateY(12vh);
+    }
+
+    #mascot img{
+        transform: translateX(-45px);
     }
 
         /* sponsers */

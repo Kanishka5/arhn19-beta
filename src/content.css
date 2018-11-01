@@ -166,7 +166,7 @@ text-shadow: 0 0 30px #000155;
 
 /* sponsors */
 .sponsors{
-    margin-bottom: 17vh;
+    margin-bottom: 20vh;
 }
 .sponsors img{
     width: 70%;
@@ -182,6 +182,10 @@ text-shadow: 0 0 30px #000155;
 
 
 /* contact us */
+
+#contacttxt{
+    margin-bottom: 20vh;
+}
 
 #contact slide{
     display: none;
@@ -423,6 +427,12 @@ text-shadow: 0 0 30px #000155;
 @media screen and (max-width: 600px) {
 
 /* contact us */
+#contacttxt{
+    margin-bottom: 0;
+    padding-bottom: 13vh;
+    transform: translateY(11vh);
+}
+
 #contact slide{
     display: block;
 }
@@ -477,6 +487,9 @@ text-shadow: 0 0 30px #000155;
     }
 
         /* sponsers */
+        #sponsors h1{
+            transform: translateY(11vh);
+        }
 
     .sponsers img{
         width: 100vw;

@@ -89,12 +89,14 @@ text-decoration: none;
 #date{
 	font-size: 32px;
 	color:white;
-	letter-spacing: 5px;
+    letter-spacing: 5px;
+    padding-top: 10px;
 }
 
 #month{
 	font-size: 24px;
-	color: white;
+    color: white;
+    padding-top: 4px;
 }
 
 .title {
@@ -136,14 +138,17 @@ text-shadow: 0 0 30px #000155;
 
 
 /* sponsors */
+.sponsors{
+    margin-bottom: 17vh;
+}
 .sponsors img{
     width: 70%;
     height: auto;
 }
 
-.sponsors h1{
+#sponsors h1{
     font-family: Avenir;
-    margin-bottom: 10vh;
+    transform: translateY(2vh);
     font-size: 5vh;
     color: white;
 }
@@ -166,7 +171,7 @@ text-shadow: 0 0 30px #000155;
     .mycard{
     display: inline-block;
     margin: 10px;
-    height: 300px;
+    height: 372px;
     background-color: #f1f1f1;
     overflow: hidden;
     background-color: #FFFFFF;
@@ -176,6 +181,7 @@ text-shadow: 0 0 30px #000155;
     width: 250px;
     -webkit-transition: .1s ease-in-out;
     transition: .1s ease-in-out;
+    font-family: Avenir,sans-serif;
     }
     
     .mycard:hover{
@@ -198,8 +204,9 @@ text-shadow: 0 0 30px #000155;
     }
     
     .card_Avatar{
-    height: 100px;
-    width: 100px;
+    transform: translateY(-2vh);
+    height: 200px;
+    width: 200px;
     margin: auto auto;
     background-size: cover;
     background-position: center;
@@ -230,7 +237,7 @@ text-shadow: 0 0 30px #000155;
         font-size: 20px;
     }
     .mycard h3{
-        margin-top: 35px;
+        margin-top: 100px;
         margin-bottom: 5px;
         font-size: 18px;
         color: #212121;
@@ -373,20 +380,48 @@ text-shadow: 0 0 30px #000155;
 
     /* responsive */
 @media screen and (max-width: 600px) {
+
+/* contact us */
 	.contactbox {
 		overflow-x: scroll;
 		white-space: nowrap;
 	}
 	
-	.mycard{
-		width: 222px;
-		height: 256px;;
-	}
-	
-	.sponsers img{
-		width: 100vw;
-		 margin-left: 0; 
-	}
-	
+    
+/* home*/
+	.title {
+        z-index: 10;
+        top: 50%;
+        font-family: 'Avenir';
+        text-align: center;
+        transform: translateY(13vh);
+        width: 100%;
+        margin-left: 0;
+    }
+
+        /* sponsers */
+
+    .sponsers img{
+        width: 100vw;
+        margin-left: 0; 
+    }
+    #fp-nav ul li .fp-tooltip.fp-left {
+        display: none;
+    }
+    
+    #fp-nav.fp-left {
+        left: 0;
+    }
+    .fp-controlArrow.fp-next {
+        border-width: 18.5px 0px 18.5px 16px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        border-width: 18.5px 16px 18.5px 0px;
+    }
+
+    #sponsors h1 {
+        transform: translateY(18vh);
+    }
 	
 	}

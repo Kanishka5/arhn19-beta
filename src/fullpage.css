@@ -61,13 +61,12 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
+    left: 10vw;
     border-width: 38.5px 34px 38.5px 0;
     border-color: transparent #fff transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
+    right: 10vw;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
 }
@@ -126,7 +125,7 @@ html.fp-enabled,
     display: block;
     width: 14px;
     height: 13px;
-    margin: 7px;
+    margin: 18px;
     position:relative;
 }
 .fp-slidesNav ul li {
@@ -146,8 +145,8 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 12px;
-    width: 12px;
+    height: 15px;
+    width: 15px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
  }
@@ -156,10 +155,10 @@ html.fp-enabled,
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 4px;
-    width: 4px;
+    height: 5px;
+    width: 5px;
     border: 0;
-    background: #333;
+    background: white;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -176,16 +175,17 @@ html.fp-enabled,
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
-    top: -2px;
+    top:-2px;
     color: #fff;
-    font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
+    font-size: 20px;
+    font-family: Avenir, sans-serif;
     white-space: nowrap;
     max-width: 220px;
     overflow: hidden;
     display: block;
     opacity: 0;
     width: 0;
+    margin-left: 4px;
     cursor: pointer;
 }
 #fp-nav ul li:hover .fp-tooltip,

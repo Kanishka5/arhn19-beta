@@ -186,6 +186,16 @@ text-shadow: 0 0 30px #000155;
 #contact slide{
     display: none;
 }
+
+#contact .fp-controlArrow.fp-next{
+    display: none;
+}
+
+#contact .fp-controlArrow.fp-prev{
+    display: none;
+}
+
+
 .contact{
     z-index: 10;
     text-align: center;
@@ -437,6 +447,14 @@ text-shadow: 0 0 30px #000155;
         margin-left: 0;
     }
 
+    .title h1{
+        font-size: 0.4em;
+    }
+
+    #date,#month{
+        font-size: 0.2em;
+    }
+
     #mascot{
         padding-right: 0;
         transform: translateY(12vh);
@@ -469,10 +487,6 @@ text-shadow: 0 0 30px #000155;
 
     .fp-controlArrow.fp-prev {
         border-width: 18.5px 16px 18.5px 0px;
-    }
-
-    #sponsors h1 {
-        transform: translateY(18vh);
     }
 	
 	}

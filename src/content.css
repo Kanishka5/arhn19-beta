@@ -434,6 +434,14 @@ text-shadow: 0 0 30px #000155;
 .mycard{
     transform: translateY(-18vh);
 }
+
+#contact .fp-controlArrow.fp-next{
+    display: block;
+}
+
+#contact .fp-controlArrow.fp-prev{
+    display: block;
+}
 	
     
 /* home*/

@@ -262,13 +262,13 @@ text-shadow: 0 0 30px #000155;
     }
     
     .mycard .one .card_Avatar{
-        background-image: url("https://www.ccanitd.in/images/Shivam.jpg");
+        background-image: url("../img/members/Sudipto.jpg");
     }
     .mycard .two .card_Avatar{
-        background-image: url("https://www.ccanitd.in/images/Mayank.jpg");
+        background-image: url("../img/members/Ankith.jpg");
     }
     .mycard .three .card_Avatar{
-        background-image: url("https://www.ccanitd.in/images/Akhil.jpg");
+        background-image: url("../img/members/Akshay.jpg");
     }
     
     .mycard h3, a, i{
